@@ -17,20 +17,29 @@ function cancelOrder(order) {
 
 function calculateLoyaltyPoints(orderAmount) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   let points = orderAmount;
 
 // Task 4: Clone A multiplier comment
+=======
+  let points = orderAmount;
+
+  // Task 4: Clone B tweak comment
+>>>>>>> ba1bfce (Update calculation comment in Clone B - navarrete.reuben)
   if (orderAmount > 100) {
     points = points * 1.5;
   }
 
   // Task 2: Round loyalty points calculation
   return Math.round(points);
+<<<<<<< HEAD
 =======
   // Task 2: Round points calculation
   let points = Math.round(orderAmount);
   return points;
 >>>>>>> origin/feature/loyalty-points
+=======
+>>>>>>> ba1bfce (Update calculation comment in Clone B - navarrete.reuben)
 }
 
 module.exports = { calculateLoyaltyPoints };
