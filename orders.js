@@ -19,12 +19,12 @@ function calculateLoyaltyPoints(orderAmount) {
 <<<<<<< HEAD
   let points = orderAmount;
 
-
+// Task 4: Clone A multiplier comment
   if (orderAmount > 100) {
     points = points * 1.5;
   }
 
-  
+  // Task 2: Round loyalty points calculation
   return Math.round(points);
 =======
   // Task 2: Round points calculation
