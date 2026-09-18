@@ -15,10 +15,6 @@ function cancelOrder(order) {
   return { ...order, status: 'cancelled', total: 0 };
 }
 
-function calculateLoyaltyPoints(order) {
-  return Math.floor(order.total / 10);
-}
-
 function calculateLoyaltyPoints(orderAmount) {
   let points = orderAmount;
 
@@ -27,8 +23,11 @@ function calculateLoyaltyPoints(orderAmount) {
     points = points * 1.5;
   }
 
-  return Math.floor(points);
+  
+  return Math.round(points);
 }
+
+module.exports = { calculateLoyaltyPoints };
 
 module.exports = { calculateLoyaltyPoints };
 
