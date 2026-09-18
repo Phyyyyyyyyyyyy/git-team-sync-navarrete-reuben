@@ -16,6 +16,7 @@ function cancelOrder(order) {
 }
 
 function calculateLoyaltyPoints(orderAmount) {
+<<<<<<< HEAD
   let points = orderAmount;
 
 
@@ -25,6 +26,11 @@ function calculateLoyaltyPoints(orderAmount) {
 
   
   return Math.round(points);
+=======
+  // Task 2: Round points calculation
+  let points = Math.round(orderAmount);
+  return points;
+>>>>>>> origin/feature/loyalty-points
 }
 
 module.exports = { calculateLoyaltyPoints };
