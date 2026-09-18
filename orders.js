@@ -20,14 +20,9 @@ function calculateLoyaltyPoints(order) {
 }
 
 function calculateLoyaltyPoints(orderAmount) {
-  let points = orderAmount;
-
-
-  if (orderAmount > 100) {
-    points = points * 1.5;
-  }
-
-  return Math.floor(points);
+  // Task 2: Round points calculation
+  let points = Math.round(orderAmount);
+  return points;
 }
 
 module.exports = { calculateLoyaltyPoints };
